@@ -8,6 +8,7 @@ class LoginPage extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Color.fromRGBO(253, 236, 227, 1),
         body: Stack(
           children: [
             SizedBox(
@@ -58,8 +59,9 @@ class LoginPage extends StatelessWidget {
     ),
     ElevatedButton(
       style: ElevatedButton.styleFrom(
-        primary: Color.fromARGB(251, 235, 115, 60),
-        minimumSize: const Size.fromHeight(50), // NEW
+        primary: Color.fromRGBO(255, 255, 255, 1),
+        minimumSize: const Size.fromHeight(50), 
+        foregroundColor: Colors.black,// NEW
       ),
       onPressed: () {},
       child: const Text(
