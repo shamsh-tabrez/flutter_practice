@@ -1,46 +1,82 @@
 import 'package:flutter/material.dart';
-import 'package:login_Ui/login/assets/delhi.jpg';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          Image.asset(
-            'assets/delhi.jpg',
-            fit: BoxFit.cover,
-            width: double.infinity,
-            height: double.infinity,
-          ),
-          Container(
-            padding: EdgeInsets.all(30.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                TextFormField(
-                  decoration: InputDecoration(labelText: 'Email'),
-                  keyboardType: TextInputType.emailAddress,
+    double width = MediaQuery.of(context).size.width;
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Color.fromRGBO(253, 236, 227, 1),
+        body: Stack(
+          children: [
+            SizedBox(
+              width: width,
+              height: 450,
+              child: ClipRRect(
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(30.0),
+                  bottomRight: Radius.circular(30.0),
                 ),
-                SizedBox(height: 20.0),
-                TextFormField(
-                  decoration: InputDecoration(labelText: 'Password'),
-                  obscureText: true,
+                child: Image.asset(
+                  'assets/delhi.jpg',
+                  fit: BoxFit.cover,
                 ),
-                SizedBox(height: 20.0),
-                ElevatedButton(
-                  child: Text('Log In'),
-                  onPressed: () {},
-                ),
-              ],
+              ),
             ),
-          ),
-        ],
+            Container(
+              
+              padding: const EdgeInsets.all(30.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  const TextField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Email',
+                    ),
+                  ),
+                  SizedBox(height: 30.0),
+                  const TextField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Password',
+                    ),
+                  ),
+                  SizedBox(height: 30.0),
+       Column(
+  children: [
+    const SizedBox(
+      height: 30,
+    ),
+    
+    const SizedBox(
+      height: 10,
+    ),
+    ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        primary: Color.fromRGBO(255, 255, 255, 1),
+        minimumSize: const Size.fromHeight(50), 
+        foregroundColor: Colors.black,// NEW
+      ),
+      onPressed: () {},
+      child: const Text(
+        'LogIn',
+        style: TextStyle(fontSize: 24),
+      ),
+    ),
+  ],
+)
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
 }
-
