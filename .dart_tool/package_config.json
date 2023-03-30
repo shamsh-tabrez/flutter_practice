@@ -8,6 +8,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "badges",
+      "rootUri": "file:///home/denisys/.pub-cache/hosted/pub.dev/badges-3.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///home/denisys/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
@@ -54,6 +60,12 @@
       "rootUri": "file:///home/denisys/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_rating_bar",
+      "rootUri": "file:///home/denisys/.pub-cache/hosted/pub.dev/flutter_rating_bar-4.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
     },
     {
       "name": "flutter_test",
@@ -152,7 +164,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-03-29T09:52:25.243939Z",
+  "generated": "2023-03-30T12:01:29.206630Z",
   "generator": "pub",
   "generatorVersion": "2.19.5"
 }
