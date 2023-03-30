@@ -8,14 +8,14 @@ class LoginPage extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color.fromRGBO(253, 236, 227, 1),
+        backgroundColor: const Color.fromRGBO(253, 236, 227, 1),
         body: Stack(
           children: [
             SizedBox(
               width: width,
               height: 450,
               child: ClipRRect(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(30.0),
                   bottomRight: Radius.circular(30.0),
                 ),
@@ -26,20 +26,18 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             Container(
-              
               padding: const EdgeInsets.all(30.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   const TextField(
-                    obscureText: true,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'Email',
                     ),
                   ),
-                  SizedBox(height: 30.0),
+                  const SizedBox(height: 30.0),
                   const TextField(
                     obscureText: true,
                     decoration: InputDecoration(
@@ -47,30 +45,23 @@ class LoginPage extends StatelessWidget {
                       labelText: 'Password',
                     ),
                   ),
-                  SizedBox(height: 30.0),
-       Column(
-  children: [
-    const SizedBox(
-      height: 30,
-    ),
-    
-    const SizedBox(
-      height: 10,
-    ),
-    ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        primary: Color.fromRGBO(255, 255, 255, 1),
-        minimumSize: const Size.fromHeight(50), 
-        foregroundColor: Colors.black,// NEW
-      ),
-      onPressed: () {},
-      child: const Text(
-        'LogIn',
-        style: TextStyle(fontSize: 24),
-      ),
-    ),
-  ],
-)
+                  const SizedBox(height: 30.0),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  ElevatedButton(
+                    //borderRadius : const BorderRadius.all(Radius.circular(10)),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
+                      minimumSize: const Size.fromHeight(50),
+                      foregroundColor: Colors.black, // NEW
+                    ),
+                    onPressed: () {},
+                    child: const Text(
+                      'LogIn',
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ),
                 ],
               ),
             ),

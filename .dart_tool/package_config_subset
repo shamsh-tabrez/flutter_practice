@@ -2,6 +2,10 @@ async
 2.18
 file:///home/denisys/.pub-cache/hosted/pub.dev/async-2.10.0/
 file:///home/denisys/.pub-cache/hosted/pub.dev/async-2.10.0/lib/
+badges
+2.17
+file:///home/denisys/.pub-cache/hosted/pub.dev/badges-3.0.3/
+file:///home/denisys/.pub-cache/hosted/pub.dev/badges-3.0.3/lib/
 boolean_selector
 2.17
 file:///home/denisys/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/
@@ -30,6 +34,10 @@ flutter_lints
 2.17
 file:///home/denisys/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/
 file:///home/denisys/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib/
+flutter_rating_bar
+2.14
+file:///home/denisys/.pub-cache/hosted/pub.dev/flutter_rating_bar-4.0.1/
+file:///home/denisys/.pub-cache/hosted/pub.dev/flutter_rating_bar-4.0.1/lib/
 js
 2.16
 file:///home/denisys/.pub-cache/hosted/pub.dev/js-0.6.5/
